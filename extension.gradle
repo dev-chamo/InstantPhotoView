@@ -1,0 +1,5 @@
+ext {
+    Properties properties = new Properties();
+    properties.load(project.rootProject.file('local.properties').newDataInputStream())
+    flickrApiKey = properties.getProperty('flickrApiKey', "\"\"")
+}
